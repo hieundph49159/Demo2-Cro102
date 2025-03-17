@@ -30,8 +30,13 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
+        <Stack.Screen name="index" options={{ title: "Trang Chủ" }} />
+        <Stack.Screen name="UseStateScreen" options={{ title: "useState Example" }} />
+        <Stack.Screen name="UseEffectScreen" options={{ title: "useEffect Example" }} />
+        <Stack.Screen name="UseRefScreen" options={{ title: "useRef Example" }} />
+        <Stack.Screen name="UseCallbackScreen" options={{ title: "useCallback Example" }} />
+        <Stack.Screen name="UseMemoScreen" options={{ title: "useMemo Example" }} />
+        <Stack.Screen name="UseContextScreen" options={{ title: "useContext Example" }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
